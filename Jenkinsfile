@@ -5,13 +5,13 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                bat 'pip install -r requirements.txt'
+                bat '"C:\\Users\\shiva\\AppData\\Local\\Programs\\Python\\Python39\\python.exe" -m pip install -r requirements.txt'
             }
         }
 
         stage('Run Training') {
             steps {
-                bat 'python train.py'
+                bat '"C:\\Users\\shiva\\AppData\\Local\\Programs\\Python\\Python39\\python.exe" train.py'
             }
         }
 
