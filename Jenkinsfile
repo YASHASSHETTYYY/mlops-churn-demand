@@ -9,9 +9,9 @@ pipeline {
             }
         }
 
-        stage('Run Training') {
+        stage('Run Churn Training') {
             steps {
-                bat '"C:\\Users\\shiva\\AppData\\Local\\Programs\\Python\\Python39\\python.exe" train.py'
+                bat '"C:\\Users\\shiva\\AppData\\Local\\Programs\\Python\\Python39\\python.exe" src\\train_churn.py'
             }
         }
 
